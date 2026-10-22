@@ -1,0 +1,469 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Genshin";
+  src: url("../fonts/genshin_font.woff2") format("woff2"),
+    url("../fonts/genshin_font.woff") format("woff"),
+    url("../fonts/genshin_font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GenshinS";
+  src: url("../fonts/genshinS.woff2") format("woff2"),
+    url("../fonts/genshinS.woff") format("woff"),
+    url("../fonts/genshinS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+
+body {
+  font-family: "Genshin", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 7px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)),
+    url("assets/loadingscreen.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "GenshinS", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+#eu {
+  font-size: 1.2em;
+}
+
+h2 {
+  text-align: center;
+  margin: 1.5em 1em 0.5em 1em;
+}
+
+#firsth2 {
+  margin: 0.1em 1em 0.5em 1em !important;
+}
+
+p {
+  line-height: 1.5;
+  margin-left: 0;
+  padding: 0 1.5em;
+  text-indent: 2em;
+  margin-bottom: 0.5em;
+  text-align: justify;
+  color: #ffffff;
+}
+
+p.no_align {
+  text-align: left !important;
+  text-indent: 0 !important;
+}
+
+li,
+li a {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em; 
+  margin-left: auto;
+}
+
+header nav a
+{
+  font-size: 1.2em;
+  color: #ffffff;
+  font-family: "GenshinS", sans-serif;
+}
+
+footer a {
+  font-size: 1.2em;
+  margin: 0 0.5em;
+  color: #ffffff;
+  font-family: "GenshinS", sans-serif;
+}
+
+/* Header & Footer */
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff28;
+  padding: 1em 2em;
+  margin: 0.5em 1em;
+  height: 50px;
+}
+
+/* Layout - Main */
+
+main {
+  display: flex;
+  position: relative;
+  padding: 1em;
+}
+
+main > #section {
+  flex: auto;
+  padding: 1em;
+}
+
+main > nav {
+  flex: 0 0 8vw;
+  background: #0000005a;
+  order: -1;
+  padding: 1em;
+}
+
+main > aside {
+  flex: 0 0 8vw;
+  background: #0000005a;
+  padding: 1em;
+}
+
+/* Nav List */
+
+ol.navlist {
+  position: sticky;
+  top: 2.5em;
+  bottom: 1em;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+ol.navlist li {
+  margin-bottom: 5em;
+}
+
+ol.navlist.desktop {
+  display: block;
+}
+
+details.mobile {
+  display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 750px) {
+  main {
+    flex-direction: column;
+  }
+
+  main > nav,
+  main > aside,
+  main > article {
+    flex: none;
+    width: auto;
+    order: initial;
+  }
+
+  main > nav {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  ol.navlist li {
+    margin: 1.5em 0;
+  }
+
+  ol.navlist.desktop {
+    display: none;
+  }
+
+  details.mobile {
+    display: block;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  details.mobile summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: #00000035;
+    border: 1px solid #0000005a;
+    color: #ffffffec;
+  }
+
+  details.mobile ol.navlist {
+    display: none;
+    padding: 0 1em 0 2em;
+    margin: 0;
+  }
+
+  details.mobile[open] ol.navlist {
+    display: block;
+  }
+
+  #elements {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  #elements img {
+    width: auto !important;
+    height: auto !important;
+    max-height: 30px;
+    margin: 0 0.5em;
+  }
+
+  #photos img {
+    flex: 1;
+    object-fit: cover;
+  }
+}
+
+/* Elements Animations */
+
+#elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+#elements img:nth-child(1),
+#elements img:nth-child(3),
+#elements img:nth-child(5),
+#elements img:nth-child(7) {
+  width: 100%;
+  height: auto;
+  animation: pulse1 4s infinite ease-in-out;
+}
+
+#elements img:nth-child(2),
+#elements img:nth-child(4),
+#elements img:nth-child(6) {
+  width: 100%;
+  height: auto;
+  animation: pulse2 4s infinite ease-in-out;
+}
+
+@keyframes pulse1 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.7);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.7);
+    opacity: 0.7;
+  }
+}
+
+/* Dropdown */
+
+.dropdown {
+  display: inline-block;
+
+  position: relative;
+
+  z-index: 1000;
+}
+
+.dropdown button {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0.4em 0.4em;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #ffffff;
+  font-family: "GenshinS", sans-serif;
+}
+
+.dropdown a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 5px 5px;
+}
+
+.dropdown .content a {
+  font-family: "Genshin", sans-serif;
+}
+
+.dropdown .content {
+  display: none;
+  position: absolute;
+  background-color: #0000005d;
+  min-width: 1em;
+  max-width: 9.5em;
+
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  backdrop-filter: blur(4px);
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+
+.dropdown:hover button {
+  background-color: #00000000;
+}
+
+.dropdown a:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* Characters */
+
+.characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16em, auto));
+  grid-gap: 1em;
+  justify-content: center; 
+  justify-items: center; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.characters li {
+  border: 5px solid #000000be;
+  background-color: rgba(255, 255, 255, 0.436);
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.characters li p {
+  color: #000;
+  padding: 0em 1em 0.5em 1em;
+}
+
+.characters h2 {
+  background: #000000be;
+  margin: 0;
+  padding: 0.5em 0.5em;
+}
+
+.characters .inner img.chibi {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 0.5em 0.5em;
+  opacity: 0.8;
+  transition: transform 1s ease-in-out, opacity 2s ease;
+}
+
+.characters .inner img.chibi:hover {
+  transform: rotate(360deg) scale(1.3);
+  opacity: 1;
+}
+
+/* Login/Logout  */
+
+#authSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto; /* Aceasta va împinge secțiunea în dreapta în interiorul unui flexbox */
+    color: white; 
+}
+
+#authSection input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#logout-btn, #login-btn {
+
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0.4em 0.4em;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #ffffff;
+  font-family: "GenshinS", sans-serif;
+}
+
+#login-input {
+  width: 85px;
+}
+
+#canvas {
+  width: 100%;
+  max-width: 900px; 
+  height: auto;  
+  display: block;
+  margin: 0 auto;
+}
+
+#countdown {
+  font-size: 3em;
+  color: #ffffff;
+  font-family: "GenshinS", "Genshin", sans-serif;
+  text-align: center;
+  margin-left: 0;
+  padding: 0 0;
+  text-indent: 0;
+  margin-bottom: 0.2em;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: 2px solid #F6CC59;
+    outline-offset: 2px;
+    box-shadow: 0 0 10px #F6CC59;
+}

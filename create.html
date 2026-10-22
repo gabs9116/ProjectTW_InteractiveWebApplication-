@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Genshin Impact</title>
+  <link rel="stylesheet" href="create.css" type="text/css">
+  <link rel="icon" href="assets/GenshinImpactIcon.jpg" type="image/jpeg">
+  <meta charset="utf-8">
+  <meta name="author" content="Gabi">
+  <meta name="description" content="A small introduction to the game Genshin Impact..">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Genshin Impact</h1>
+    <nav id="header-nav">
+      <a id="mainPage" href="index.html">Main Page</a>
+      <div class="dropdown">
+        <button>Nations</button>
+        <div class="content">
+          <a href="nations.html#mondstadt">Mondstadt</a>
+          <a href="nations.html#liyue">Liyue</a>
+          <a href="nations.html#inazuma">Inazuma</a>
+          <a href="nations.html#sumeru">Sumeru</a>
+          <a href="nations.html#fontaine">Fontaine</a>
+          <a href="nations.html#natlan">Natlan</a>
+          <a href="nations.html#snezhnaya">Snezhnaya</a>
+        </div>
+      </div>
+      <div id="authSection">
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <nav>
+      <details class="mobile">
+        <summary>Menu</summary>
+        <ol class="navlist">
+          <li><a href="#identity">Character Identity</a></li>
+          <li><a href="#aspect">Physical Aspect</a></li>
+          <li><a href="#combat">Combat Stats</a></li>
+          <li><a href="#details">Details & Origin</a></li>
+          <li><a href="#created-characters">Character Collection</a></li>
+          <li><a href="#countdown">Countdown Version 6.3</a></li>
+        </ol>
+      </details>
+      <ol class="navlist desktop">
+        <li><a href="#identity">Character Identity</a></li>
+        <li><a href="#aspect">Physical Aspect</a></li>
+        <li><a href="#combat">Combat Stats</a></li>
+        <li><a href="#details">Details & Origin</a></li>
+        <li><a href="#created-characters">Character Collection</a></li>
+        <li><a href="#countdown">Countdown Version 6.3</a></li>
+      </ol>
+    </nav>
+
+    <div id="section">
+      <div id="form-container">
+        <h2 id="firsth2">Desing your own character :3</h2>
+        <form id="form">
+          <fieldset id="identity">
+            <legend>Character Identity</legend>
+            <div class="label">
+              <label for="char-name">Character Name :</label>
+              <input type="text" id="char-name" placeholder="E.g. Escoffier" minlength="3" maxlength="40" required >
+            </div>
+
+            <div class="label">
+              <span class="formspan">Gender :</span>
+              <input type="radio" id="male" name="gender" value="Male">
+              <label for="male">Male</label>
+
+              <input type="radio" id="female" name="gender" value="Female">
+              <label for="female">Female</label>
+
+              <input type="radio" id="other" name="gender" value="Other" checked>
+              <label for="other">Other</label>
+            </div>
+
+            <div class="label">
+              <label for="char-constellation">Constellation Name :</label>
+              <input type="text" id="char-constellation" placeholder="E.g. Dulciaria Structura" minlength="3" maxlength="40" required>
+            </div>
+
+            <div class="label">
+              <label for="char-birthday">Birthday :</label>
+              <input type="date" id="char-birthday">
+            </div>
+          </fieldset>
+
+          <fieldset id="aspect">
+            <legend>Physical Aspect</legend>
+            <div class="label">
+              <label for="char-height">Height :</label>
+              <select id="char-height">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="Tall">Tall</option>
+                <option value="Short">Short</option>
+                <option value="Child">Child</option>
+              </select>
+            </div>
+
+            <div class="label">
+              <label for="char-hair-color">Hair Color :</label>
+              <input type="color" id="char-hair-color" name="char-hair-color" required>
+            </div>
+
+            <div class="label">
+              <label for="char-hair-length">Hair Length :</label>
+              <select id="char-hair-length">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="Long">Long</option>
+                <option value="Medium">Medium</option>
+                <option value="Short">Short</option>
+              </select>
+            </div>
+
+            <div class="label">
+              <label for="char-eye-color">Eye Color :</label>
+              <input type="color" id="char-eye-color" name="char-eye-color" required>
+            </div>
+
+          </fieldset>
+
+          <fieldset id="combat">
+            <legend>Combat Stats</legend>
+            <div class="label">
+              <label for="char-element">Vision (Element) :</label>
+              <select id="char-element">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="Anemo">Anemo</option>
+                <option value="Geo">Geo</option>
+                <option value="Electro">Electro</option>
+                <option value="Dendro">Dendro</option>
+                <option value="Hydro">Hydro</option>
+                <option value="Pyro">Pyro</option>
+                <option value="Cryo">Cryo</option>
+              </select>
+            </div>
+
+            <div class="label">
+              <label for="char-weapon">Weapon :</label>
+              <select id="char-weapon">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="Sword">Sword</option>
+                <option value="Claymore">Claymore</option>
+                <option value="Polearm">Polearm</option>
+                <option value="Catalyst">Catalyst</option>
+                <option value="Bow">Bow</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset id="details">
+            <legend>Details & Origin</legend>
+            <div class="label">
+              <span class="formspan">Rarity :</span>
+              <div class="radio-group">
+                <label><input type="radio" name="rarity" value="4" checked> 4 Star</label>
+                <label><input type="radio" name="rarity" value="5"> 5 Star</label>
+              </div>
+            </div>
+
+            <div class="label">
+              <label for="char-nation">Nation :</label>
+              <select id="char-nation">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="Mondstadt">Mondstadt</option>
+                <option value="Liyue">Liyue</option>
+                <option value="Inazuma">Inazuma</option>
+                <option value="Sumeru">Sumeru</option>
+                <option value="Fontaine">Fontaine</option>
+                <option value="Natlan">Natlan</option>
+                <option value="Snezhnaya">Snezhnaya</option>
+              </select>
+            </div>
+
+            <div class="label">
+              <label for="char-bio">Backstory & Lore :</label>
+              <textarea id="char-bio" rows="4" placeholder="Write the character's journey..."></textarea>
+            </div>
+          </fieldset>
+          <div class="form-buttons">
+            <button type="button" id="randomize-btn">Randomize Values</button>
+            <button type="submit" id="create-btn">Create Character</button>
+            <button type="button" id="inspire-btn">Inspire</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="created-characters">
+
+      </div>
+
+      <div id="inspire-ideas">
+
+      </div>
+
+      <p id="countdown">Countdown Version 6.3</p>
+      <canvas id="canvas" width="900" height="200"></canvas>
+    </div>
+
+    <aside>
+      <div id="elements">
+        <img src="assets/Element_Pyro_White.svg" alt="Pyro Symbol">
+        <img src="assets/Element_Hydro_White.svg" alt="Hydro Symbol">
+        <img src="assets/Element_Anemo_White.svg" alt="Anemo Symbol">
+        <img src="assets/Element_Electro_White.svg" alt="Electro Symbol">
+        <img src="assets/Element_Dendro_White.svg" alt="Dendro Symbol">
+        <img src="assets/Element_Cryo_White.svg" alt="Cryo Symbol">
+        <img src="assets/Element_Geo_White.svg" alt="Geo Symbol">
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <h1 id="eu"><a href="create.html">Create your own character</a></h1>
+    <nav>
+      <a href="https://genshin.hoyoverse.com/en/">Genshin Impact Official Page</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+

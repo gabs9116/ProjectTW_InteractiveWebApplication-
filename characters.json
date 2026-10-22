@@ -1,0 +1,102 @@
+{
+    "characters_ideas" : [
+        {
+            "name": "Elowen",
+            "gender": "female",
+            "constellation": "Silva Spiritus",
+            "birthday": "2003-05-12",
+            "height": "Tall",
+            "hairColor": "#4a6d4a",
+            "hairLength": "Long", 
+            "eyeColor": "#e0f2f1", 
+            "element": "Dendro",
+            "weapon": "Bow",
+            "nation": "Sumeru", 
+            "rarity": "5", 
+            "bio": "A mysterious guardian of the Avidya Forest who can hear the whispers of ancient trees."
+        },
+
+        {
+            "name": "Kaito",
+            "gender": "male",
+            "constellation": "Maris Lumen",
+            "birthday": "2001-08-21",
+            "height": "Short",
+            "hairColor": "#1a237e",
+            "hairLength": "Short", 
+            "eyeColor": "#81d4fa", 
+            "element": "Hydro",
+            "weapon": "Sword",
+            "nation": "Inazuma", 
+            "rarity": "4", 
+            "bio": "A young detective from the Tenryou Commission specializing in maritime crimes."
+        },
+
+        {
+            "name": "Seraphina",
+            "gender": "female",
+            "constellation": "Caelum Igne",
+            "birthday": "1997-01-05",
+            "height": "Tall",
+            "hairColor": "#ff5722",
+            "hairLength": "Medium", 
+            "eyeColor": "#ffeb3b", 
+            "element": "Pyro",
+            "weapon": "Catalyst",
+            "nation": "Natlan", 
+            "rarity": "5", 
+            "bio": "A high-ranking warrior priestess who channels the primal flames of the volcano."
+        },
+
+        {
+            "name": "Valerius",
+            "gender": "male",
+            "constellation": "Aurum Glacies",
+            "birthday": "2005-11-30",
+            "height": "Tall",
+            "hairColor": "#cfd8dc",
+            "hairLength": "Long", 
+            "eyeColor": "#00bcd4", 
+            "element": "Cryo",
+            "weapon": "Claymore",
+            "nation": "Snezhnaya", 
+            "rarity": "5", 
+            "bio": "An exiled nobleman who uses his frost-covered blade to protect those forgotten by the frost."
+        },
+
+        {
+            "name": "Xuan",
+            "gender": "female",
+            "constellation": "Lapidis Flora",
+            "birthday": "2019-03-15",
+            "height": "Child",
+            "hairColor": "#795548",
+            "hairLength": "Short", 
+            "eyeColor": "#ffc107", 
+            "element": "Geo",
+            "weapon": "Polearm",
+            "nation": "Liyue", 
+            "rarity": "4", 
+            "bio": "An apprentice at the Wangsheng Funeral Parlor who loves collecting shiny rocks."
+        },
+        
+        {
+            "name": "Zephyr",
+            "gender": "other",
+            "constellation": "Venti Currus",
+            "birthday": "2011-07-07",
+            "height": "Short",
+            "hairColor": "#b2dfdb",
+            "hairLength": "Medium", 
+            "eyeColor": "#ffffff", 
+            "element": "Anemo",
+            "weapon": "Bow",
+            "nation": "Mondstadt", 
+            "rarity": "4", 
+            "bio": "A spirit of the wind that took human form to experience the joy of wine and music."
+        }
+    ]
+}
+
+
+        
